@@ -1,0 +1,26 @@
+class Counter {
+    int value;
+
+    Counter(int initial) {
+        this.value = initial;
+    }
+
+    void increment() {
+        this.value = this.value + 1;
+    }
+
+    int get() {
+        return this.value;
+    }
+}
+
+int main() {
+    Counter counter = Counter(0);
+
+    while (counter.get() < 3) {
+        counter.increment();
+        print_int(counter.get());
+    }
+
+    return 0;
+}
