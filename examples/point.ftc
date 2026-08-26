@@ -1,0 +1,25 @@
+class Point {
+    float x;
+    float y;
+
+    Point(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    void move(float dx, float dy) {
+        this.x = this.x + dx;
+        this.y = this.y + dy;
+    }
+
+    float sum() {
+        return this.x + this.y;
+    }
+}
+
+int main() {
+    Point point = Point(1.5, 2.5);
+    point.move(1.0, 2.0);
+    print_float(point.sum());
+    return 0;
+}
